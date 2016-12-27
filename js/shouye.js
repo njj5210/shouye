@@ -6,14 +6,10 @@ $(function(){
       $('.intro').css('height',$(window).height());
       //$('video').height($(this).height()+'px');
    })
-   
-   
-   
+
    $('.caidan').click(function(){
       $('.nav-header').fadeToggle('slow');
    })
-   
-   
    //榧犳爣缁忚繃杞挱鍥剧殑鏃跺€欐樉绀哄乏鍙充袱杈圭殑鎺т欢
    $('.lunbo-one').hover(function(){
       $('.lunbo-right').css('opacity','0.8');
@@ -22,8 +18,6 @@ $(function(){
       $('.lunbo-right').css('opacity','');
       $('.lunbo-left').css('opacity','');     
    })
-   
-   
    //榧犳爣鐐瑰嚮杞挱鍥惧乏鍙虫帶浠剁殑鏃跺€欒繘琛屽垏鎹�
    var lunw = 0;
    var pl = 0;
@@ -94,6 +88,18 @@ $(function(){
          },1);
       })
    })
+   hljs.configure({languages:['js']})
+   hljs.highlightBlock($('#code')[0])
+   $('#usage').click(function(){
+      this.focus()
+      this.select()
+   })
+   $('.textarea').focus()
+       .typetype("工作，是一种良好的生活态度!", {
+          callback: function() {
+             $('body').addClass('reveal')
+          }
+       }).delay(3000)
 })
 
 

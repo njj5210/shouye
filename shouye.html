@@ -3,15 +3,18 @@
     <meta charset="UTF-8">
     <title>牛老大web前端个人主页</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font.css">
+    <!--<link rel="stylesheet" href="css/font.css">-->
     <link rel="stylesheet" href="css/iconfont.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/highlight.min.js"></script>
+    <script src="js/jquery.typetype.min.js"></script>
+    <script src="js/jquery.typetype.js"></script>
     <meta name="Keywords" content="个人首页,博客,html,zengdexing,牛锦江,H5,主页,js特效,原生,jquery,杭州,web,前端,攻城狮,页面">
     <meta name="description" content="牛锦江的web前端工程师个人简历">
     <link rel="stylesheet" href="css/index.css">
-    <script src="js/index.js"></script>
+    <script src="js/shouye.js"></script>
 </head>
 
 <body>
@@ -46,8 +49,16 @@
     </nav>
     <!--  个人介绍部分  -->
     <section class="intro" style="height: 609px;">
+
         <div class="container introduction">
-            <div class="caidan iconfont icon-category">
+            <div class="ta">
+                <textarea spellcheck="false" class="textarea"></textarea>
+            </div>
+            <div id="rhs">
+                <div id="code">
+                </div>
+            </div>
+            <div class="caidan ">
                 <span class="glyphicon ">
                   <div class="iconfont icon-category"></div>
                 </span>
@@ -64,7 +75,7 @@
                         <img src="img/touxiang.jpg" alt="">
                     </div>
                     <div class="col-md-6 jianjie">
-                        <h3>您好！我叫<span>牛锦江</span></h3>
+                        <h3>Hello!&nbspMy name is<span>牛锦江</span></h3>
                         <div class="tedian">
                             <p class="tedian-title">个人介绍</p>
                             <p>热爱前端，追求用更扎实的代码技术做出更好的功能、效果。</p>
@@ -255,6 +266,21 @@
             </div>
         </div>
     </div>
+<!--foot-->
+<footer>
+    <div class="foot">
+        <ul>
+            <li>居住地址:杭州市余杭区</li>
+            <li>联系方式:15735806629</li>
+            <li>邮箱地址:njj15735806629@163.com</li>
+        </ul>
+        <ul>
+            <li>作品链接</li>
+            <li>同行交友</li>
+            <li>邮箱地址:njj15735806629@163.com</li>
+        </ul>
+    </div>
+</footer>
 
 
 </body></html>
