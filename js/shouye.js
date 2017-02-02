@@ -1,4 +1,9 @@
 $(function(){
+   $('textarea')
+       .typetype('认真工作是一种好的生活习惯\n               享受工作，享受生活,才是美好的人生！')
+       .delay(200)
+       // .typetype('\n                 享受工作，享受生活。')
+
    $('video').attr({width:$(this).width(),height:$(window).height()});
    $('.intro').css('height',$(window).height());
    $(window).resize(function(){
@@ -94,12 +99,7 @@ $(function(){
       this.focus()
       this.select()
    })
-   $('.textarea').focus()
-       .typetype("工作，是一种良好的生活态度!", {
-          callback: function() {
-             $('body').addClass('reveal')
-          }
-       }).delay(3000)
+
 })
 
 
